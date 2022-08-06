@@ -11,8 +11,8 @@ History: NULL
 #include<stdio.h>
 #include <stdlib.h>
 int main() {
-	char str[20] = "hu_kai_xuan";
-	char temp[20] = "hello_world";
+	char str[50] = "hu_kai_xuan";
+	char temp[50] = "hello_world";
 	printf("temp = %s\r\n", temp);
 	
 	memset(temp, 0, sizeof(temp));//把字符'0'写入 sizeof(temp)个字节到temp
@@ -38,6 +38,10 @@ int main() {
 		*/
 		token = strtok(NULL, "_");
 	}
+	
+	char str_1[50] = " is handsome !";
+	strcat(str, str_1);//字符串拼接 str_1 接到 str 尾部
+	printf("str = %s\r\n", str); 
 	
 	system("pause");
 	
